@@ -1,0 +1,223 @@
+#include <stdio.h>
+//variables
+int introChoice, middleChoice1, middleChoice2, middleChoice3;
+int age;
+int randname;
+int cheating;
+char vilager[50];
+char shanks[50];
+string_t Name;
+
+//6 functions
+
+//intro
+void intro(int num, string_t name){
+    printf("your name is %s and your age is %i. You wake up in a world of magical powers and mystical people, filled with things you wouldn't even imagine. Magical fruits called Devil Fruits give people strange abilities, such as the power to create earthquakes, or turn anything you touch into a bomb that explodes at your will. The possibilities of these fruits are endless, with the only downside being losing the ability to swim. These fruits are highly valued, and you don't have one. You are confused about how you know these things about this world, you went to sleep on a friday night and woke up here. You go outside the house you woke up in and an old man says hello to you. How does he know my name? you think to yourself. The old man asks if you are okay and you look confused. You say you don't know who he is, but he doesn't believe you. You try to remember what his name is. What is his name?\n", Name, age);
+    scanf("%s", &vilager );
+    printf("%s! That is his name, but how do you know? Not that you can remember, and you tell %s you think you have a case of amnesia, and don't remember much. He tells you that you are just a regular villager in the town of Loguetown, and you get the feeling that he tells the truth. You tell him you need some time to think about your situation, so he leaves to go greet the other waking villagers.You think about the possibilities of this world, and how anything is possible. You know that one of the strongest pirates doesn't even use a fruit, he is just that strong. But what was his name?\n", vilager, vilager);
+    scanf("%s", &shanks);
+    printf("yes, %s is the strongest man without a fruit. Back on topic, you come up with 3 options, leaving to sea as a pirate to try and recover your memories, (1) going to join the world government as a marine in the hopes of they know how to cure your amnesia, (2) or staying at the village and accepting that you don't remember your past. (3)\n", shanks);
+    printf("make your middle choice: 1, 2, or 3\n",);
+    scanf("%i", &introChoice);
+    while(introChoice != 1 && introChoice != 2 && introChoice != 3){
+        printf("That is not a choice. Please choose '1', '2', or '3'\n");
+        scanf("%i", &introChoice);
+    }
+}
+
+//middle1
+void middle1(){
+    printf("you chose to become a pirate.\n");
+    printf("You decide to go to sea as a pirate in search of answers. You go to tell %s and the rest of the villagers about your decision, and they are sad to hear of your leaving, but don't try to stop you because of how important this is to you. They show you the ship they prepared for you, a small boat capable of holding 4 people at most. You realize if you want to thrive, you will need to get a better boat at an island you end up going to. You realize there are 3 directions you can possibly head in, North,(1) East,(2) or West.(3) you are unable to go south due to a massive mountain stretching for miles. You remember hearing that over the mountain is the “Second Sea”, a place with wild weather and where only the strong survive. You must be as strong as %s if you want to go there and live, as well as having a dependable crew. What direction do you decide to go in?\n", vilager, shanks);
+    printf("make your decision: 1, 2, or 3\n");
+    scanf("%i", &middleChoice1);
+    while(middleChoice1 != 1 && middleChoice1 != 2 && middleChoice1 != 3){
+        printf("That is not a choice. Please choose '1', '2', or '3'\n");
+        scanf("%i", &middleChoice1);
+    }
+}
+
+//middle2
+void middle2(){
+    printf("you chose to become a marine.");
+    printf("You decide to become a marine in hopes that someone in the government can help you with your amnesia. You inform %s and the rest of the village about your decision and if anyone knows where you can join, and the villagers tell you that they come weekly to check in on the town, and the next visit is tomorrow, you wait until the next day, and when the marines come you ask to join. They seem skeptical, but let you join nonetheless. You are given the job of sweeping and mopping the floors, which isn't what you wanted, but it is in the marines anyway, and with training, you might become as strong as %s. so you deal with the situation. You arrive at the marine headquarters, where you clean the place for 2 weeks, before being told to prepare for war and one of the strongest pirate groups will be trying to invade the headquarters to get their crewmate that was captured back. You prepare to fight, and when they arrive, you see power so terrifying you are scared to fight. You think of 3 possible things for you to do. You can try and charge the leader to try and end the fight quickly,(1) try and run away from the fight,(2), or try and fight the weaker enemies to survive without abandoning the marines.(3) what is your choice?\n", vilager, shanks);
+    printf("make your decision: 1, 2, or 3\n");
+    scanf("%i", &middleChoice2);
+    while(middleChoice2 != 1 && middleChoice2 != 2 && middleChoice2 != 3){
+        printf("That is not a choice. Please choose '1', '2', or '3'\n");
+        scanf("%i", &middleChoice2);
+    }
+}
+
+//middle3
+void middle3(){
+    printf("you chose to stay at the vilage");
+    printf("You decide that staying at the village and trying to remember your past if the best option. You tell %s and the other villagers you will be staying, and they are happy to hear you are staying. After weeks of being in the village and trying many methods, you don't really remember anything new. You start to think your memories won't every come back, and you don't know what %s would do in this situation. As you think of trying to go out and explore, you hear news of pirates being spotted coming towards the island. When the pirates arrive, you think of what to do. You come up with 3 options on what to do. You can try and fight the pirates to defend the village,(1) run away so the pirates can't harm you,(2) and hide from the pirates(3). What is your choice?\n", vilager, shanks);
+    printf("make your decision: 1, 2, or 3\n");
+    scanf("%i", &middleChoice3);
+    while(middleChoice3 != 1 && middleChoice3 != 2 && middleChoice3 != 3){
+        printf("That is not a choice. Please choose '1', '2', or '3'\n");
+        scanf("%i", &middleChoice3);
+    }
+}
+
+//end1
+void end1(){
+    printf("you chose to head north");
+    printf("You decide to head north, and %s as well as the rest of the villagers bid you farewell. As you travel north, you see no signs of people or islands. You then hear a rumbling from beneath you and your boat starts to shake. A massive sea snake shoots out of the water and stares you in the eyes, terrifying you. You remember that these beasts are called Sea Beasts, due to their strength and size. You start to think that in order to be as strong as %s, you must beat this beast. but before you could try doing anything, the beast swallowed you and your boat whole. You died.\n", vilager, shanks);
+    exit (1);
+
+}
+
+//end2
+void end2(){
+    printf("you chose to head East");
+    printf("You decide to head East, and the villagers and %s wish you well as you depart. You travel north, not seeing anything for hours, until you end up on a giant blue galleon, with the symbol of the marines on their sail. They spot you and your pirate flag on your ship, and capture you and take you onto their ship. Knowing this is a bad situation, you think of what %s would do and decide to try and beat all of the marines. You manage to break out of the chains you were put in and charge one of the marines nearby. He shoots you with a gun and you bleed out due to the wound. You died.\n", vilager, shanks);
+    exit (1);
+    
+
+}
+//end3
+void end3(){
+    printf("you chose to head west");
+    printf("You decide to head West, and the village along with %s wish you luck. You travel for hours, ending up apon a village. You dock your boat and head into town to investigate the island. You find a group of fish people, also known as fishmen terrorizing the townspeople and demanding taxes from them. You think of what %s would do in this situation and you decide to try and be a hero and kill the fishmen to prevent the people’s suffering. You charge the fishman and stab him through the heart with your sword, but the other fishmen near you surround you and kill you. You died.",vilager, shanks);
+    exit (1);
+
+}
+//end4
+void end4(){
+    printf("you chose to charge the leader\n");
+    printf("You decide to charge the leader to end the fight quickly like %s would do. You run at the leader yelling “Prepare to die!”, but before you get close enough to do anything, he uses his earthquake powers to create an earthquake at your feet, and the ground splits between you. As you plunge into the depths of the earth, you think of %s and wish you stayed at the village. You died.\n", shanks, vilager);
+    exit (1);
+
+}
+//end5
+void end5(){
+    printf("you chose to run away.\n");
+    printf("You decide to try and run from the fight, and as you get away from the main battle, you run into one of the top ranking marines. He asks you what you are doing, and that you better not be running away. You try to come up with a lie, but he doesn't believe you. He says someone who tries to run from a battle doesn't deserve the right to be a marine. Before you can respond, he plunges a fist made of magma into your chest, as he has magma powers. As you die from the hole in your chest, you wish you were as strong as %s and would have just stayed with %s. You died.\n", shanks, vilager);
+    exit (1);
+
+}
+//end6
+void end6(){
+    printf("you chose to try and fight weaker enemies.\n");
+    printf("You decide to try and avoid conflict, fighting the weaker enemies. You know this isn't what %s would do, but you're not strong enough yet. As the war rages on, you fight with the weaker pirates and barely win. You avoid big conflict, and manage to survive the war. The marines won! After the war, you are promoted to a vice captain of a marine ship, you think of %s and if he would  be proud, and you are proud of where you have made it. You eventually become a high ranked marine and get your memories back, and become one of the top ranking marines.\n", shanks, vilager);
+    exit (1);
+
+}
+//end7
+void end7(){
+    printf("you chose to fight the pirates.\n");
+    printf("You decide to try and fight the pirates to defend %s and the other villagers. You charge the pirates when they arrive in town, and think you can be like %s and defend the village. You charge at the first pirate you see and attack. They block your attack and counter attack. You try to react but you are too slow. You die to a slash wound.\n", vilager, shanks);
+    exit (1);
+
+}
+//end8
+void end8(){
+    printf("you chose to run away.\n");
+    printf("You decide to try and run so the pirates can't harm you. You think about %s and the others, but are sure they will be fine. You know %s would do things differently, but you are not them, and you can not beat the pirates. As you run, you run into a small group of the pirates. They see you running, and pull out a flintlock. As you try and run, you are shot and bleed out. You died.\n", vilager, shanks);
+    exit (1);
+
+}
+//end9
+void end9(){
+    printf("you chose to hide.\n");
+    printf("You decide hiding is the best option for this situation, and you will be fine when the pirates leave. Before hiding, you quickly look around for %s and anybody else, but the either left or are hiding. As you get in your hiding spot, you think of what %s would do, but you are better off hiding. You hide under a bed in the guest bedroom. After hiding for 30 minutes, you hear someone break into your home, you pray they don't find you, and you hear them enter the bedroom. Your heart is racing as you hear footsteps, and they suddenly stop. You look over, and see a man’s dirty face staring at you. He is the last thing you ever see, as he stabs you for trying to hide. You died.\n", vilager, shanks);
+    exit (1);
+
+}
+//roadmap
+void roadmap(){
+    printf("Would you like to see a roadmap of the story? (1 for yes, 2 for no)\n");
+    scanf("%i", &cheating);
+    while(cheating != 1 && cheating != 2 ){
+        printf("That is not a choice. Please choose '1' or '2'\n");
+        scanf("%i", &cheating);
+    }
+}
+//actuall roadmap
+void realRoadmap(){
+    printf("From the intro, option 1 leads to becoming a pirate,\n option 2 leads to becoming a marine,\n and option 3 leads to staying at the vilage.\n from becoming a pirate(option1), option 1 leads to dying to seabeast,\n option 2 leads to dying to marines,\n and option 3 leads to dying to fishmen.\n from becoming a marine(option2), option 1 leads to dying to a earthquake created by a strong pirate,\n option 2 leads to being killed by a top ranking marine because to tried to run away from the fight,\n and option 3 leads to ranking up in the marines due to your performance in the fight.\n from staying at the vilage(option 3), option 1 leads to dying to pirates invading the vilage,\n option 2 leads to being caught running and shot by pirates,\n and option 3 leads to being found hiding and killed by pirates \n");   
+}
+int main(){  //main program to run (logic)
+    srand(time(NULL));
+    randname=rand() % 10 + 1;
+    if(randname==1){
+        Name = "Bob";
+    }    
+    else if(randname==2){
+        Name = "Joe";
+    }
+    else if(randname==3){
+        Name = "Issac";
+    }
+    else if(randname==4){
+        Name = "Prashant";
+    }   
+    else if(randname==5){
+     Name = "Diego";
+    }
+    else if(randname==6){
+        Name = "Zoro";
+    }
+    else if(randname==7){
+        Name = "Jared";
+    }
+    else if(randname==8){
+        Name= "Carter";
+    }
+    else if(randname==9){
+         Name= "Curt";
+    }
+    else if(randname==10){
+        Name= "Orion";
+    }
+    srand(time(NULL));
+    age=13+rand()% 50;
+    roadmap();
+    if(1 == cheating){
+     realRoadmap();   
+    }
+    intro(age, Name);
+    if(1 == introChoice){
+        middle1();
+        if(middleChoice1 == 1){
+            end1();
+        }
+        if(middleChoice1 == 2){
+            end2();
+        }
+        if(middleChoice1 == 3){
+            end3();
+        }
+    }
+    if(2 == introChoice){
+        middle2();
+        if(middleChoice2 == 1){
+            end4();
+        }
+        if(middleChoice2 == 2){
+            end5();
+        }
+        if(middleChoice2 == 3){
+            end6();
+        }
+    }
+    if(3 == introChoice){
+        middle3();
+        if(middleChoice3 == 1){
+            end7();
+        }
+        if(middleChoice3 == 2){
+            end8();
+        }
+
+        if(middleChoice3 == 3){
+            end9();
+        }
+    }
+
+        
+
+
+}
